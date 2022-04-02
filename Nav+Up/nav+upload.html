@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" type="text/css" href="styles_nav+up.css">
+
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback Services</title>
+
+</head>
+<body>
+    <div class="feedback">
+        <form action="action_page.php">
+      
+        <label for="fname">First Name</label>
+        <input type="text" id="fname" name="firstname" placeholder="Your name..">
+      
+        <label for="lname">Last Name</label>
+        <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+      
+        <label for="product">Product</label>
+        <select id="product" name="product">
+          <option value="Laptop">Laptop</option>
+          <option value="Gears">Gears</option>
+          <option value="Hardware">Hardware</option>
+        </select>
+      
+        <label for="Feedback">Feedback</label>
+        <textarea id="subject" name="subject" placeholder="How do you think?"style="height:150px"></textarea>
+                  <br> <br>
+        <input type="submit" value="Submit">    
+        </form>
+      </div>    
+      <br> 
+      <br> 
+      
+      <!-- Upload-Funct -->
+      <div class="file btn btn-lg btn-primary"> Upload 
+        <input type='file' onchange="readURL(this);" />
+      </div>
+      
+      <img id="img_feedback" src="http://placehold.it/300" alt="Your image" />
+</body>
+</html>
